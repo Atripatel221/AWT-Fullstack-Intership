@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            div{
+                height: 100px;
+                width: 100px;
+                position: relative;
+                background-color: coral;
+                color: darkslategray;
+                text-align: center;
+                transition: 3s;
+                margin-left: 40px;
+            }
+            #translatediv:hover{
+                translate:200px 60px;
+            }
+            #rotatediv:hover{
+                transform: rotate(180deg);
+            }
+            #rotatediv3d:hover{
+                transform: rotate3d( 2,2,2,180deg);
+            }
+            #skewdiv:hover{
+                transform: skew(20deg,60deg);
+            }
+            #scalediv:hover{
+                transform: scale(1.5,0.5);
+            }
+            #opacitydiv:hover{
+                background-color: darkseagreen;
+                opacity: 0.4;
+            }
+            #rgbadiv:hover{
+                background-color: brown;
+            }
+            #boxshadowdiv:hover{
+                box-shadow:10px 10px 5px 2px black;
+            }#textshadowdiv:hover{
+                text-shadow: midnightblue 10px 10px ;
+            }
+            #overflowdiv:hover{
+                overflow:scroll;
+                height: 60px;
+            }
+            #borderradiusdiv:hover{
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="translatediv">translate </div><hr>
+        <div id="rotatediv">rotate</div><hr>
+        <div id="rotatediv3d">rotate 3d </div><hr>
+        <div id="skewdiv">skew </div><hr>
+        <div id="scalediv">scale </div><hr>
+        <div id="opacitydiv">opacity </div><hr>
+        <div id="rgbadiv">rgba </div><hr>
+        <div id="boxshadowdiv">box-shadow </div><hr>
+        <div id="textshadowdiv">text-shadow </div><hr>
+        <div id="borgerradiusdiv">border radius </div><hr>
+        <div id="overflowdiv">overflow </div><hr>
+        <div id="borderradiusdiv">border-radius </div><hr>
+
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            animation-duration: 5s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-name: example;
+        }
+        @keyframes example{
+            0%{background-color: chocolate;left: 0px;top:0px;transform: rotate(0deg);}
+            25%{background-color:aquamarine;left: 200px;top:0px;transform: rotate(90deg);}
+            50%{background-color:chartreuse;left: 200px;top:200px;transform: rotate(180deg);}
+            75%{background-color:darkslateblue;left: 0px;top:200px;transform: rotate(270deg);}
+            100%{background-color:plum;left: 0px;top:0px;transform: rotate(360deg);}
+
+        }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
