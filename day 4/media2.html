@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .box{
+                   font-size: x-large;
+                   text-align: center;
+                   display: none;
+                   background-color:coral;
+             }
+             @media (max-width: 300px)
+             {
+                #box1{
+                    display: block;
+                }
+             }
+             @media( min-width:300px) and (max-width: 500px)
+             {
+                #box2{
+                    display: block;
+                }
+             } @media (min-width: 500px)
+             {
+                #box3{
+                    display: block;
+                    background-color: aqua;
+                }
+             }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1">mobile</div>
+        <div class="box" id="box2">tablet</div>
+        <div class="box" id="box3">computer</div>
+   
+    </body>
+</html>
