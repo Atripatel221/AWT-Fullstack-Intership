@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+    <p id="a1"></p>
+    <script>
+        const mypr={
+            firstname:"Atri",
+            lastname:"Patel",
+            fullname: function(){
+                return this.firstname+" "+this.lastname;
+            }
+        }
+        document.getElementById('a1').value=mypr.fullname();
+    </script>
+    </body>
+</html>
