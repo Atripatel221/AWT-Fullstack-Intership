@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <body>
+        <h2>date and time example</h2>
+        <button type="button" onclick="A1()">show date</button>
+        <p id="p1"></p>
+        <br>
+        <button type="button" onclick="A2()">show time</button>
+        <p id="p2"></p>
+        <hr>
+        <h2>string length example</h2>
+         <label for="">string:</label>
+         <input type="text" id="p3" placeholder="write something">
+         <br><br>
+         <button type="button" onclick="A3()">show length</button>
+         <p id="p4"></p>
+        <script>
+            function A1(){
+                let a = new Date();
+                let b = a.getDate()+'/'+(a.getMonth()+1)+'/'+a.getFullYear();
+                document.getElementById('p1').innerHTML=b;
+            }
+            function A2(){
+                let x = new Date();
+                let y = x.getHours()+' '+x.getMinutes()+' '+x.getSeconds()+' '+x.getMilliseconds();
+                document.getElementById('p2').innerHTML=y;
+            }
+            function A3(){
+                let q = document.getElementById('p3').value;
+                document.getElementById('p4').innerHTML=q.length;
+            }
+        </script>
+    </body>
+</html>

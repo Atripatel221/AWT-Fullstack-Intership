@@ -1,0 +1,15 @@
+ <html>
+    <body>
+        <h4>event example</h4>
+        <p onclick="this.innerHTML='change'">do it !</p>
+   <hr>
+   <p>second example</p>
+        <button onclick="a(this)">let do it !</button>
+        <script>
+            function a(){
+                document.getElementById("p").innerHTML="change";
+            }
+        </script>
+        <p id="p"></p>
+    </body>
+</html>
