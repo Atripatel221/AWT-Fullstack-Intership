@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> js example</title>
+    <script>
+        function pr1() {
+            let x = "";
+            x += "screen.width: " + screen.width;
+            x += "<br/>screen.height: " + screen.height;
+            x += "<br/>screen.availWidth: " + screen.availWidth;
+            x += "<br/>screen.availHeight: " + screen.availHeight;
+            x += "<br/>screen.colorDepth: " + screen.colorDepth;
+            x += "<br/>screen.pixelDepth: " + screen.pixelDepth;
+            document.getElementById("a").innerHTML = x;
+            let y = "";
+            y += "navigator.cookieEnabled: " + navigator.cookieEnabled;
+            y += "<br/>navigator.language: " + navigator.language;
+            y += "<br/>navigator.platform: " + navigator.platform;
+            document.getElementById("b").innerHTML = y;
+        }
+       
+    </script>
+</head>
+
+<body>
+  <h1>screen/navigator object example</h1>
+    <button type="button" onclick="pr1()">
+        Get Screen / Navigator Info
+    </button>
+    <h3>Screen detail</h3>
+    <span id="a"></span>
+    <h3>Navigator detail</h3>
+    <span id="b"></span>
+    
+</body>
+
+</html>

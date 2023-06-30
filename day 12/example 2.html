@@ -1,0 +1,46 @@
+
+<html>
+<head>
+    <title>js example</title>
+   <script>
+        function a1Dailog(){
+            alert("wrong password");
+        }
+        function a2Dailog(){
+            let x = confirm("can you do it ?");
+            if (x == true){
+                document.getElementById("q1").innerHTML="yes";
+            }
+            else{
+                document.getElementById("q1").innerHTML="no";
+            }
+        }
+        function a3Dailog(){
+         let  y = prompt("who is he ?");
+         document.getElementById("q2").innerHTML= y;
+        }
+        function a4(){
+            open("https://silveroakuni.ac.in/#");
+        }
+        function a5(){
+            this.close();
+        }
+   </script>
+</head>
+<body>
+    <h2>window object example</h2>
+
+    <button type="button" onclick="a1Dailog()">alert</button>
+    <br><br>
+    <button type="button" onclick="a2Dailog()">comform</button>
+    <p>comform result : <span id="q1"></span></p>
+    <br>
+    <button type="button" onclick="a3Dailog()">prompt</button>
+    <p>pormpt result : <span id="q2"></span></p>
+    <br>
+    <button type="button" onclick="a4()">open</button>
+    <br><br>
+    <button type="button" onclick="a5()">close</button>
+
+</body>
+</html>

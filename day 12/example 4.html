@@ -1,0 +1,51 @@
+<html>
+<title>JS example</title>
+<style>
+    .banner {
+        width: auto;
+        border: solid;
+        border-color:cadetblue;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 80%;
+    }
+    #a{
+        margin-left: 48%;
+    }
+</style>
+<script >
+    let image = new Array('pic2.jpg', 'pic3.jpg',
+        'lone-tree.jpg');
+    let count = 0;
+    let timeout;
+    function ShowBanners() {
+        if (document.images) {
+            count++; 
+
+            if (count == image.length) {
+                count = 0;
+            }
+            document.ChangeBanner.src = image[count];
+            timeout = setTimeout("ShowBanners()", 3000);
+        }
+    }
+    function stop() {
+        console.log("Movening Stop");
+        clearTimeout(timeout);
+        count = 0;
+    }
+</script>
+</head>
+
+<body onload="ShowBanners()">
+    <div class="banner">
+        <h1>banner example</h1>
+        <img src="pic2.jpg" name="ChangeBanner">
+    </div><br>
+    <button id="a" onclick="stop()">Stop !</button>
+</body>
+
+</html>
