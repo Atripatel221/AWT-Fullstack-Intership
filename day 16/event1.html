@@ -1,0 +1,49 @@
+<html >
+<head>
+   <title>Event 1</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <script>
+         $(document).ready(function(){
+            $("#btnclick").click(function(){ 
+            $(this).text("single click");
+         });
+         $("#btnclick").dblclick(function(){ 
+            $(this).text("double click");
+         });
+
+         $("#mouse_event").mousedown(function(){
+            $(this).css("background-color","skyblue")
+         });
+         $("#mouse_event").mouseup(function(){
+            $(this).css("background-color","lightgreen")
+         });
+
+         $("#mouse-event").mouseover(function(){
+            $(this).css("background-color","skyblue")
+         });
+         $("#mouse-event").mouseout(function(){
+            $(this).css("background-color","lightgreen")
+         });
+
+         });
+   </script>
+
+   <style>
+         div{
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            margin: 10px;
+         }
+   </style>
+
+</head>
+<body>
+    
+    <button id="btnclick">click here</button>     
+    <div id="mouse-event">mouse event</div>
+    <div id="mouse_event">up/down event</div>
+</body>
+</html>
