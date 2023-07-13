@@ -2,9 +2,11 @@
 
 <head>
     <title>Feedback Form</title>
+
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+    
     <style>
         fieldset {
             width: 700px;
@@ -16,8 +18,13 @@
         button:hover {
             background-color: steelblue;
         }
-        body{
-          background-color: cadetblue;
+
+        body {
+            background-color: cadetblue;
+        }
+        label{
+            font-size: large;
+            font-weight: bold;
         }
     </style>
 
@@ -30,33 +37,35 @@
 </head>
 
 <body>
-   
-        <fieldset>
+
+    <fieldset>
+        <center>
+            <h1>Feedback Form</h1>
+        </center>
+        <hr>
+        <form onsubmit="dailog()">
             <center>
-                <h2>Feedback Form</h2>
+
+                <label style="padding-left: 25px;">Name :</label>                
+                <input type="text" name="name" placeholder="Enter Your Name ...." required><br><br>
+
+                <label>Email ID :</label>
+                <input type="email" name="name" placeholder="Enter Your Email ID ....." required><br><br>
+
+                <label>Feedback :</label>
+                <br>
+                <textarea type="text" name="name" cols="30" rows="5" placeholder="Ente Your Feedback ...."
+                    required></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+                <hr>
+                <h3>Visit Again !</h3>
             </center>
-            <hr>
-            <form onsubmit="dailog()">
-                <center>
+        </form>
 
-                    <label>Name :</label>
-                    <input type="text" name="name" placeholder="Enter Your Name" required><br><br>
+    </fieldset>
+    
 
-                    <label>Email ID :</label>
-                    <input type="email" name="name" placeholder="Enter Your Email ID" required><br><br>
-
-                    <label>Feedback :</label>
-                    <br>
-                    <textarea type="text" name="name" cols="30" rows="5" placeholder="Ente Your Feedback"
-                        required></textarea>
-                    <br><br>
-                    <button type="submit">Submit</button>
-
-                </center>
-            </form>
-
-        </fieldset>
- 
 </body>
 
 </html>
